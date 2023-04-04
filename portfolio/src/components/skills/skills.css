@@ -1,0 +1,43 @@
+.skills__container {
+    text-align: center;
+    height: 100vh;
+}
+
+.skills__container h2 {
+    color: var(--color-primary);
+}
+
+.exp__cards {
+    background: var(--color-bg-variant);
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 25rem;
+    margin: 2rem auto 0;
+}
+
+.exp__card h2 {
+    text-align: left;
+}
+
+.exp__card h5 {
+    text-align: left;
+}
+
+.exp__card ul {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+/* TABLETS */
+@media screen and (max-width: 1024px) {
+    .skills__container {
+        text-align: center;
+        margin-top: 6rem!important;
+
+    }
+  }
+  
+  /* PHONES */
+  @media screen and (max-width: 600px) {
+    
+  }
