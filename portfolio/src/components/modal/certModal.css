@@ -1,9 +1,0 @@
-.modal {
-    height: 50vh;
-    width: 50vw;
-    position: fixed;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: aqua;
-}
