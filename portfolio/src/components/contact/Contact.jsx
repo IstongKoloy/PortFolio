@@ -44,7 +44,7 @@ const Contact = () => {
                         <i className="bx bx-phone-call contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Phone</h3>
-                        <span className="contact__card-data">+63927-804-1503</span>
+                        <span className="contact__card-data">+63-927-804-1503</span>
 
                         <a href="tel:+639278041503" className="contact__button">Message me
                             <i className="bx bx-right-arrow-alt contact__button-icon"></i>
