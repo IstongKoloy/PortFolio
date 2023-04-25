@@ -5,6 +5,10 @@
     padding-bottom: 3rem;
 }
 
+.contact__content {
+    position: relative;
+}
+
 .contact__title {
     text-align: center;
     font-size: var(--h3-font-size);
@@ -104,6 +108,19 @@
 
 .contact__form-area textarea {
     resize: none;
+}
+
+.popup__container {
+    background-color: var(--title-color-dark)!important;
+    color: var(--body-color)!important;
+    position: relative;
+}
+
+.popup__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
 }
 
 /* For large devices */

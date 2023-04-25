@@ -95,9 +95,10 @@ const Contact = () => {
                 </form>
                 <Popup
                     visible={visible}
-                    onClose={() => setVisible(false)}
-                    duration={3000}
+                    animationDuration={1000}
+                    className='popup__container'
                 >
+                    <i className="uil uil-times popup__close" onClick={() => setVisible(false)}></i>
                     <p>Message has been sent to Glenn</p>
                 </Popup>
             </div>
