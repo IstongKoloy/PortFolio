@@ -75,7 +75,7 @@ const Data = () => {
         <p className='home__description'>Building the future one line of code at a time.</p>
 
         <a href="#contact" className="button button--flex">
-            Say Hello
+            Contact Me!
             <svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"

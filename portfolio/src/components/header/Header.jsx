@@ -1,11 +1,28 @@
 import './header.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
     const [menu, showMenu] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const handleScroll = () => {
+        const scrollTop = window.pageYOffset;
+        if (scrollTop > 0) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+    };
  
   return (
-    <header className='header'>
+    <header className={`header ${isScrolled ? "navbar-shadow" : "header"}`}>
         <nav className="nav container">
             <a href="#home" className="nav__logo">GAndaleon</a>
             <div className={menu ? "nav__menu show-menu" : "nav__menu"}>
